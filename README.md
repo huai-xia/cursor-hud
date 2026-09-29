@@ -74,16 +74,7 @@ cursor-hud gives you better insights into what's happening in your Cursor CLI se
 
 ### Default (`compact`)
 
-Colored preview (GitHub renders SVG; plain code blocks cannot show ANSI colors):
-
 <p align="left"><img src="docs/preview.png" alt="cursor-hud preview" width="740" /></p>
-
-```
-[Auto] │ cursor-hud  main*
-Context ████░░░░░░ 34% 69k/200k │ Plan auto ██░░░░░░░░ 14% · api █░░░░░░░░░ 11%
-◐ Read: src/foo.ts │ ▸ Fix layout (1/2)
-◐ #1 explore bg: Search tokens                         1m 12s
-```
 
 - **Line 1** — Model (cyan), path (yellow), git (blue)  
 - **Line 2** — Context bar (blue→cyan→yellow→magenta) + plan `auto` (yellow) / `api` (magenta)  

@@ -74,16 +74,7 @@ statusLine 刷新后会出现在 footer。改布局后若高度异常，重启�
 
 ### 默认（`compact`）
 
-彩色预览（GitHub 用 SVG 着色；普通代码块无法显示 ANSI 颜色）：
-
 <p align="left"><img src="docs/preview.png" alt="cursor-hud 预览" width="740" /></p>
-
-```
-[Auto] │ cursor-hud  main*
-Context ████░░░░░░ 34% 69k/200k │ Plan auto ██░░░░░░░░ 14% · api █░░░░░░░░░ 11%
-◐ Read: src/foo.ts │ ▸ Fix layout (1/2)
-◐ #1 explore bg: Search tokens                         1m 12s
-```
 
 - **第 1 行** — 模型（青）、路径（黄）、git（蓝）  
 - **第 2 行** — Context 条（蓝→青→黄→品红）+ Plan `auto`（黄）/ `api`（品红）  
