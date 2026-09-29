@@ -4,6 +4,7 @@ A real-time statusline HUD for **Cursor CLI** (`agent`) — context usage, activ
 
 > 🌐 English | [中文文档](README.zh.md)
 
+[![npm](https://img.shields.io/npm/v/cursor-hud.svg)](https://www.npmjs.com/package/cursor-hud)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/huai-xia/cursor-hud)](https://github.com/huai-xia/cursor-hud/stargazers)
 
@@ -18,6 +19,8 @@ A real-time statusline HUD for **Cursor CLI** (`agent`) — context usage, activ
 Requires **Node.js ≥ 18** and the Cursor CLI (`agent`).
 
 ### Option A — npm (recommended)
+
+Package: [`cursor-hud@0.1.0`](https://www.npmjs.com/package/cursor-hud)
 
 ```bash
 npm install -g cursor-hud
@@ -126,25 +129,21 @@ Cursor agent → stdin JSON → cursor-hud → stdout → footer under the promp
 
 ## Configuration
 
-Run the guided configurator anytime:
+Run the guided configurator anytime (`cursor-hud-configure` after a global install, or `npm run configure` from source):
 
 ```bash
-npm run configure
+cursor-hud-configure
 ```
 
 Or edit `~/.cursor/cursor-hud/config.json` directly (see `fixtures/config.example.json`).
 
-### Interactive configure vs npm publish (roadmap)
-
-| Item | What it means | Status |
-|------|----------------|--------|
-| **Interactive configure** | Guided terminal flow to pick presets, toggles, and colors | **Available** — `npm run configure` / `cursor-hud-configure` |
-| **npm** | Install from registry | `npm i -g cursor-hud` then `cursor-hud-setup` |
+### Guided configure
 
 ```bash
-npm run configure
-# or after global install:
+# after npm global install:
 cursor-hud-configure
+# from a source checkout:
+npm run configure
 # non-interactive:
 npm run configure -- --preset=essential --yes
 npm run configure -- --preset=minimal --reset-colors --yes

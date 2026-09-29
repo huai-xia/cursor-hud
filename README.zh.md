@@ -4,6 +4,7 @@
 
 > 🌐 [English](README.md) | 中文文档
 
+[![npm](https://img.shields.io/npm/v/cursor-hud.svg)](https://www.npmjs.com/package/cursor-hud)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/huai-xia/cursor-hud)](https://github.com/huai-xia/cursor-hud/stargazers)
 
@@ -18,6 +19,8 @@
 需要 **Node.js ≥ 18** 与 Cursor CLI（`agent`）。
 
 ### 方式 A — npm（推荐）
+
+包：[`cursor-hud@0.1.0`](https://www.npmjs.com/package/cursor-hud)
 
 ```bash
 npm install -g cursor-hud
@@ -120,22 +123,20 @@ Cursor agent → stdin JSON → cursor-hud → stdout → 提示符下方 footer
 
 ## 配置
 
-随时运行引导配置：
+随时运行引导配置（全局安装后用 `cursor-hud-configure`，源码目录用 `npm run configure`）：
 
 ```bash
-npm run configure
+cursor-hud-configure
 ```
 
 或直接编辑 `~/.cursor/cursor-hud/config.json`（参见 `fixtures/config.example.json`）。
 
-### 「交互式 configure」和「npm publish」是什么？
-
-| 概念 | 含义 | 现状 |
-|------|------|------|
-| **交互式 configure** | 终端里选预设 / 开关 / 颜色，不必手改 JSON | **已提供** — `npm run configure` / `cursor-hud-configure` |
-| **npm** | 从 registry 安装 | `npm i -g cursor-hud`，再 `cursor-hud-setup` |
+### 引导配置
 
 ```bash
+# npm 全局安装后：
+cursor-hud-configure
+# 源码目录内：
 npm run configure
 # 非交互：
 npm run configure -- --preset=essential --yes
