@@ -4,16 +4,24 @@
   "description": "Real-time statusline HUD for Cursor CLI — model, git, context, plan usage, tools & subagents",
   "type": "module",
   "bin": {
-    "cursor-hud": "./dist/index.js"
+    "cursor-hud": "dist/index.js",
+    "cursor-hud-setup": "scripts/setup.mjs",
+    "cursor-hud-configure": "scripts/configure.mjs",
+    "cursor-hud-setup-hooks": "scripts/setup-hooks.mjs"
   },
   "main": "./dist/index.js",
   "files": [
     "dist/",
     "scripts/",
-    "README.md"
+    "docs/preview.png",
+    "fixtures/config.example.json",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "dev": "tsc --watch",
     "start": "node dist/index.js",
     "test:stdin": "npm run build && node dist/index.js < fixtures/sample-stdin.json",
@@ -23,7 +31,8 @@
     "setup:hooks-probe": "node scripts/setup-hooks-probe.mjs",
     "uninstall:hooks": "node scripts/uninstall-hooks.mjs",
     "uninstall:hooks-probe": "node scripts/uninstall-hooks-probe.mjs",
-    "test:hooks-merge": "npm run build && node scripts/test-hooks-merge.mjs"
+    "test:hooks-merge": "npm run build && node scripts/test-hooks-merge.mjs",
+    "pack:check": "npm run build && npm pack --dry-run"
   },
   "repository": {
     "type": "git",
@@ -42,6 +51,9 @@
   "license": "MIT",
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",

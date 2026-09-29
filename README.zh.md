@@ -17,6 +17,18 @@
 
 需要 **Node.js ≥ 18** 与 Cursor CLI（`agent`）。
 
+### 方式 A — npm（推荐）
+
+```bash
+npm install -g cursor-hud
+cursor-hud-setup
+cursor-hud-setup-hooks   # 可选
+```
+
+然后**新开** `agent` 会话。配置：`cursor-hud-configure`。
+
+### 方式 B — 源码
+
 **步骤 1：克隆并构建**
 
 ```bash
@@ -120,8 +132,8 @@ npm run configure
 
 | 概念 | 含义 | 现状 |
 |------|------|------|
-| **交互式 configure** | 终端里选预设 / 开关 / 颜色，不必手改 JSON | **已提供** — `npm run configure` |
-| **npm publish** | 发到 [npm](https://www.npmjs.com/)，可用 `npm i -g cursor-hud` | **尚未发布** — 目前用 clone 安装 |
+| **交互式 configure** | 终端里选预设 / 开关 / 颜色，不必手改 JSON | **已提供** — `npm run configure` / `cursor-hud-configure` |
+| **npm** | 从 registry 安装 | `npm i -g cursor-hud`，再 `cursor-hud-setup` |
 
 ```bash
 npm run configure

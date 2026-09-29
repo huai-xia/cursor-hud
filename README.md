@@ -17,6 +17,18 @@ A real-time statusline HUD for **Cursor CLI** (`agent`) — context usage, activ
 
 Requires **Node.js ≥ 18** and the Cursor CLI (`agent`).
 
+### Option A — npm (recommended)
+
+```bash
+npm install -g cursor-hud
+cursor-hud-setup
+cursor-hud-setup-hooks   # optional
+```
+
+Then start a **new** `agent` session. Configure anytime with `cursor-hud-configure`.
+
+### Option B — from source
+
 **Step 1: Clone and build**
 
 ```bash
@@ -126,11 +138,13 @@ Or edit `~/.cursor/cursor-hud/config.json` directly (see `fixtures/config.exampl
 
 | Item | What it means | Status |
 |------|----------------|--------|
-| **Interactive configure** | Guided terminal flow to pick presets, toggles, and colors | **Available** — `npm run configure` |
-| **npm publish** | Publish to [npm](https://www.npmjs.com/) so others can `npm i -g cursor-hud` | **Not published yet** — install via git clone as above |
+| **Interactive configure** | Guided terminal flow to pick presets, toggles, and colors | **Available** — `npm run configure` / `cursor-hud-configure` |
+| **npm** | Install from registry | `npm i -g cursor-hud` then `cursor-hud-setup` |
 
 ```bash
 npm run configure
+# or after global install:
+cursor-hud-configure
 # non-interactive:
 npm run configure -- --preset=essential --yes
 npm run configure -- --preset=minimal --reset-colors --yes
