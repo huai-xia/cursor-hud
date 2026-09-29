@@ -108,22 +108,37 @@ Cursor agent → stdin JSON → cursor-hud → stdout → 提示符下方 footer
 
 ## 配置
 
-编辑 `~/.cursor/cursor-hud/config.json`（参见 `fixtures/config.example.json`）。
+随时运行引导配置：
+
+```bash
+npm run configure
+```
+
+或直接编辑 `~/.cursor/cursor-hud/config.json`（参见 `fixtures/config.example.json`）。
 
 ### 「交互式 configure」和「npm publish」是什么？
 
 | 概念 | 含义 | 现状 |
 |------|------|------|
-| **交互式 configure** | 类似 claude-hud 的 `/claude-hud:configure`：在终端里点选预设、开关、颜色，不必手改 JSON | **尚未做** — 目前请手改 `config.json` |
-| **npm publish** | 把包发到 [npm](https://www.npmjs.com/) 仓库，别人可用 `npm i -g cursor-hud` 安装，而不必 git clone | **尚未发布** — 目前用上面的 clone 安装 |
+| **交互式 configure** | 终端里选预设 / 开关 / 颜色，不必手改 JSON | **已提供** — `npm run configure` |
+| **npm publish** | 发到 [npm](https://www.npmjs.com/)，可用 `npm i -g cursor-hud` | **尚未发布** — 目前用 clone 安装 |
 
-### 布局预设（手改）
+```bash
+npm run configure
+# 非交互：
+npm run configure -- --preset=essential --yes
+npm run configure -- --preset=minimal --reset-colors --yes
+```
 
-| 思路 | 设置 |
+流程：选预设（Essential / Full / Minimal）→ 可选微调开关 → 配色 → 预览 → 写入 `~/.cursor/cursor-hud/config.json`（会先备份）。footer 高度异常时重启 `agent`。
+
+### 布局预设（configure 或手改）
+
+| 预设 | 内容 |
 |------|------|
-| **Full** | `lineLayout: "expanded"`，`showCompletedTools: true` |
-| **Essential**（接近默认） | `lineLayout: "compact"`，`showCompletedTools: false` |
-| **Minimal** | 关掉 `showTools` / `showAgents` / `showTodos` / `showPlanUsage` 等 |
+| **Essential** | compact；工具/agent/todo 开；空闲不显示已完成工具统计 |
+| **Full** | expanded；显示已完成工具统计 |
+| **Minimal** | 仅模型 + 路径/git + Context |
 
 ### 常用选项
 

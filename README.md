@@ -114,22 +114,37 @@ Cursor agent → stdin JSON → cursor-hud → stdout → footer under the promp
 
 ## Configuration
 
-Edit `~/.cursor/cursor-hud/config.json` (created as needed; see `fixtures/config.example.json`).
+Run the guided configurator anytime:
+
+```bash
+npm run configure
+```
+
+Or edit `~/.cursor/cursor-hud/config.json` directly (see `fixtures/config.example.json`).
 
 ### Interactive configure vs npm publish (roadmap)
 
 | Item | What it means | Status |
 |------|----------------|--------|
-| **Interactive configure** | A guided CLI/TUI (like claude-hud’s `/claude-hud:configure`) to pick presets, toggles, and colors without hand-editing JSON | **Not built yet** — edit `config.json` manually for now |
-| **npm publish** | Publish this package to the [npm](https://www.npmjs.com/) registry so others can install with `npm i -g cursor-hud` instead of cloning | **Not published yet** — install via git clone as above |
+| **Interactive configure** | Guided terminal flow to pick presets, toggles, and colors | **Available** — `npm run configure` |
+| **npm publish** | Publish to [npm](https://www.npmjs.com/) so others can `npm i -g cursor-hud` | **Not published yet** — install via git clone as above |
 
-### Layout presets (manual)
+```bash
+npm run configure
+# non-interactive:
+npm run configure -- --preset=essential --yes
+npm run configure -- --preset=minimal --reset-colors --yes
+```
 
-| Preset idea | Settings |
-|-------------|----------|
-| **Full** | `lineLayout: "expanded"`, `showCompletedTools: true`, tools/agents/todos on |
-| **Essential** (default-ish) | `lineLayout: "compact"`, `showCompletedTools: false` |
-| **Minimal** | Turn off `showTools` / `showAgents` / `showTodos` / `showPlanUsage` as you like |
+Flow: choose a preset (Essential / Full / Minimal) → optional toggles → colors → preview → save to `~/.cursor/cursor-hud/config.json` (backup first). Restart `agent` if the footer height looks stuck.
+
+### Layout presets (via configure or manual)
+
+| Preset | What's shown |
+|--------|----------------|
+| **Essential** | Compact; tools/agents/todos on; hide idle completed tallies |
+| **Full** | Expanded; completed tool tallies on |
+| **Minimal** | Model + path/git + context only |
 
 ### Options
 

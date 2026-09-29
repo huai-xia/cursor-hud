@@ -18,6 +18,7 @@
     "start": "node dist/index.js",
     "test:stdin": "npm run build && node dist/index.js < fixtures/sample-stdin.json",
     "setup": "node scripts/setup.mjs",
+    "configure": "node scripts/configure.mjs",
     "setup:hooks": "node scripts/setup-hooks.mjs",
     "setup:hooks-probe": "node scripts/setup-hooks-probe.mjs",
     "uninstall:hooks": "node scripts/uninstall-hooks.mjs",
