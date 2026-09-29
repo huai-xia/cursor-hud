@@ -1,0 +1,19 @@
+{
+  "conversation_id": "cc6c92fd-9c81-47f9-8c79-c2f270b84fc0",
+  "generation_id": "cd935d9f-65ee-4300-9621-0e38f500ef45",
+  "model": "default",
+  "status": "completed",
+  "loop_count": 0,
+  "input_tokens": null,
+  "output_tokens": null,
+  "cache_read_tokens": null,
+  "cache_write_tokens": null,
+  "session_id": "cc6c92fd-9c81-47f9-8c79-c2f270b84fc0",
+  "hook_event_name": "stop",
+  "cursor_version": "2026.09.28-64d2043",
+  "workspace_roots": [
+    "/Users/huaixia/claude/job"
+  ],
+  "user_email": "[redacted]",
+  "transcript_path": "/Users/huaixia/.cursor/projects/Users-huaixia-claude-job/agent-transcripts/cc6c92fd-9c81-47f9-8c79-c2f270b84fc0/cc6c92fd-9c81-47f9-8c79-c2f270b84fc0.jsonl"
+}

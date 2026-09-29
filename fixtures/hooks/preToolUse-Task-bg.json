@@ -1,0 +1,21 @@
+{
+  "conversation_id": "d8abce24-2c43-424a-9a22-69a5fdab1d9a",
+  "generation_id": "f44e639f-42b0-4fef-9c32-ff4181bb5ee0",
+  "model": "",
+  "tool_name": "Task",
+  "tool_input": {
+    "description": "p30-bg1",
+    "prompt": "Reply: P3.0-bg1-ok",
+    "subagent_type": "explore",
+    "run_in_background": true
+  },
+  "tool_use_id": "call-63feb5be-07ef-4fae-ab69-e9da078a6fe7-1\nfc_6a8658b3-9982-9385-90bc-b26f2594fae5_0",
+  "session_id": "d8abce24-2c43-424a-9a22-69a5fdab1d9a",
+  "hook_event_name": "preToolUse",
+  "cursor_version": "2026.09.28-64d2043",
+  "workspace_roots": [
+    "/Users/huaixia/claude/cursor-hud"
+  ],
+  "user_email": "[redacted]",
+  "transcript_path": "/Users/huaixia/.cursor/projects/Users-huaixia-claude-cursor-hud/agent-transcripts/d8abce24-2c43-424a-9a22-69a5fdab1d9a/d8abce24-2c43-424a-9a22-69a5fdab1d9a.jsonl"
+}

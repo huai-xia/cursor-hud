@@ -1,0 +1,23 @@
+{
+  "conversation_id": "9e473079-6ba2-414a-bdeb-fbd14c00b01b",
+  "generation_id": "9e473079-6ba2-414a-bdeb-fbd14c00b01b",
+  "model": "default",
+  "tool_name": "Shell",
+  "tool_input": {
+    "command": "ls -lt /Users/huaixia/.cursor/projects/Users-huaixia-claude-cursor-hud/agent-transcripts 2>/dev/null | head -20; ls -lt /Users/huaixia/.cursor/cursor-hud/hooks-capture/ 2>/dev/null | head -40; ls /Users/huaixia/.cursor/cursor-hud/hooks-capture/ 2>/dev/null | head -50",
+    "cwd": "",
+    "timeout": 30000
+  },
+  "tool_output": "{\"output\":\"total 0\\ndrwxr-xr-x@ 3 huaixia  staff  96 Sep 29 21:51 9e473079-6ba2-414a-bdeb-fbd14c00b01b\\ndrwxr-xr-x@ 3 huaixia  staff  96 Sep 29 21:50 c442d56d-02a1-495d-8e5b-eb3280b998fd\\ndrwxr-xr-x@ \u2026[truncated]",
+  "duration": 436.649,
+  "tool_use_id": "f0208526-2d2f-45c5-adb7-173ff2147e46",
+  "cwd": "",
+  "session_id": "9e473079-6ba2-414a-bdeb-fbd14c00b01b",
+  "hook_event_name": "postToolUse",
+  "cursor_version": "2026.09.28-64d2043",
+  "workspace_roots": [
+    "/Users/huaixia/claude/cursor-hud"
+  ],
+  "user_email": "[redacted]",
+  "transcript_path": "/Users/huaixia/.cursor/projects/Users-huaixia-claude-cursor-hud/agent-transcripts/9e473079-6ba2-414a-bdeb-fbd14c00b01b/9e473079-6ba2-414a-bdeb-fbd14c00b01b.jsonl"
+}

@@ -1,0 +1,30 @@
+{
+  "session_id": "fixture-session",
+  "transcript_path": "/Users/huaixia/claude/cursor-hud/fixtures/sample-transcript.jsonl",
+  "cwd": "/Users/huaixia/claude/cursor-hud",
+  "render_width_chars": 72,
+  "autorun": true,
+  "model": {
+    "id": "default",
+    "display_name": "Auto",
+    "param_summary": "(Thinking)",
+    "max_mode": false
+  },
+  "workspace": {
+    "current_dir": "/Users/huaixia/claude/cursor-hud",
+    "project_dir": "/Users/huaixia/.cursor/projects/fixture",
+    "added_dirs": []
+  },
+  "version": "2026.09.28",
+  "context_window": {
+    "total_input_tokens": 69000,
+    "total_output_tokens": 1200,
+    "context_window_size": 200000,
+    "used_percentage": 34.5,
+    "remaining_percentage": 65.5,
+    "current_usage": {
+      "input_tokens": 69000,
+      "output_tokens": 1200
+    }
+  }
+}

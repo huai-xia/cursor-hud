@@ -1,0 +1,24 @@
+{
+  "lineLayout": "compact",
+  "showCompletedTools": false,
+  "colors": {
+    "model": "cyan",
+    "path": "yellow",
+    "git": "blue",
+    "context": {
+      "ok": "blue",
+      "mid": "cyan",
+      "high": "yellow",
+      "warn": "magenta",
+      "crit": "magenta"
+    },
+    "planAuto": { "ok": "yellow", "warn": "yellow", "crit": "yellow" },
+    "planApi": { "ok": "magenta", "warn": "magenta", "crit": "magenta" }
+  },
+  "thresholds": {
+    "mid": 25,
+    "high": 50,
+    "warn": 75,
+    "crit": 75
+  }
+}

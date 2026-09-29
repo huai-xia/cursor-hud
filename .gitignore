@@ -1,0 +1,21 @@
+# Dependencies & build
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+*.log
+
+# Local Cursor handoff (machine paths)
+.cursor/
+
+# Local probe dumps (never commit)
+capture/
+hooks-capture/

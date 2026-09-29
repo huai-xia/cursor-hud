@@ -1,0 +1,14 @@
+{
+  "conversation_id": "c442d56d-02a1-495d-8e5b-eb3280b998fd",
+  "generation_id": "c442d56d-02a1-495d-8e5b-eb3280b998fd",
+  "model": "default",
+  "is_background_agent": false,
+  "session_id": "c442d56d-02a1-495d-8e5b-eb3280b998fd",
+  "hook_event_name": "sessionStart",
+  "cursor_version": "2026.09.28-64d2043",
+  "workspace_roots": [
+    "/Users/huaixia/claude/cursor-hud"
+  ],
+  "user_email": "[redacted]",
+  "transcript_path": null
+}
