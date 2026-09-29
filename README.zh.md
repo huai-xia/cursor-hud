@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/huai-xia/cursor-hud)](https://github.com/huai-xia/cursor-hud/stargazers)
 
-![cursor-hud 预览](docs/preview.png)
+<p align="left"><img src="docs/preview.png" alt="cursor-hud 预览" width="740" /></p>
 
 > **灵感来自 [claude-hud](https://github.com/jarrodwatts/claude-hud)**（作者 [Jarrod Watts](https://github.com/jarrodwatts)）。  
 > 产品思路相同（原生 statusline + transcript），针对 Cursor CLI 的 payload、transcript 特性与 hooks 做了适配重写。  
@@ -76,7 +76,7 @@ statusLine 刷新后会出现在 footer。改布局后若高度异常，重启�
 
 彩色预览（GitHub 用 SVG 着色；普通代码块无法显示 ANSI 颜色）：
 
-![cursor-hud 预览](docs/preview.png)
+<p align="left"><img src="docs/preview.png" alt="cursor-hud 预览" width="740" /></p>
 
 ```
 [Auto] │ cursor-hud  main*

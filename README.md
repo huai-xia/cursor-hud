@@ -7,7 +7,7 @@ A real-time statusline HUD for **Cursor CLI** (`agent`) — context usage, activ
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/huai-xia/cursor-hud)](https://github.com/huai-xia/cursor-hud/stargazers)
 
-![cursor-hud preview](docs/preview.png)
+<p align="left"><img src="docs/preview.png" alt="cursor-hud preview" width="740" /></p>
 
 > **Inspired by [claude-hud](https://github.com/jarrodwatts/claude-hud)** by [Jarrod Watts](https://github.com/jarrodwatts).  
 > Same product idea (native statusline + transcript), reimplemented for Cursor CLI’s payload, transcript quirks, and hooks.  
@@ -76,7 +76,7 @@ cursor-hud gives you better insights into what's happening in your Cursor CLI se
 
 Colored preview (GitHub renders SVG; plain code blocks cannot show ANSI colors):
 
-![cursor-hud preview](docs/preview.png)
+<p align="left"><img src="docs/preview.png" alt="cursor-hud preview" width="740" /></p>
 
 ```
 [Auto] │ cursor-hud  main*
