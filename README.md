@@ -2,8 +2,12 @@
 
 A real-time statusline HUD for **Cursor CLI** (`agent`) — context usage, active tools, running agents, and todo progress. Always visible below your input.
 
+> 🌐 English | [中文文档](README.zh.md)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/huai-xia/cursor-hud)](https://github.com/huai-xia/cursor-hud/stargazers)
+
+![cursor-hud preview](docs/preview.svg)
 
 > **Inspired by [claude-hud](https://github.com/jarrodwatts/claude-hud)** by [Jarrod Watts](https://github.com/jarrodwatts).  
 > Same product idea (native statusline + transcript), reimplemented for Cursor CLI’s payload, transcript quirks, and hooks.  
@@ -68,7 +72,11 @@ cursor-hud gives you better insights into what's happening in your Cursor CLI se
 
 ## What You See
 
-### Default (`compact`, ~2 core lines)
+### Default (`compact`)
+
+Colored preview (GitHub renders SVG; plain code blocks cannot show ANSI colors):
+
+![cursor-hud preview](docs/preview.svg)
 
 ```
 [Auto] │ cursor-hud  main*
@@ -77,26 +85,17 @@ Context ████░░░░░░ 34% 69k/200k │ Plan auto ██░░�
 ◐ #1 explore bg: Search tokens                         1m 12s
 ```
 
-- **Line 1** — Model, project path, git branch  
-- **Line 2** — Context bar + plan usage  
+- **Line 1** — Model (cyan), path (yellow), git (blue)  
+- **Line 2** — Context bar (blue→cyan→yellow→magenta) + plan `auto` (yellow) / `api` (magenta)  
 - **Extra rows** — Tools / todos when active; each subagent on its own line (`#n` when ≥2), elapsed time on the right  
+
+In your real terminal, colors come from ANSI (and optional truecolor in config).
 
 ### Expanded
 
 Same core two lines, then tools / agents / todos each on their own row (`lineLayout: "expanded"`).
 
 Tool paths are shown **relative to cwd / project_dir**.
-
-Default colors (classic ANSI):
-
-| Segment | Color |
-|---------|--------|
-| Model | fixed cyan |
-| Path | fixed yellow |
-| Git | fixed blue |
-| Context bar | blue → cyan → yellow → magenta (25 / 50 / 75) |
-| Plan `auto` | yellow |
-| Plan `api` | magenta |
 
 ---
 
@@ -126,7 +125,12 @@ Cursor agent → stdin JSON → cursor-hud → stdout → footer under the promp
 
 Edit `~/.cursor/cursor-hud/config.json` (created as needed; see `fixtures/config.example.json`).
 
-There is no interactive `/configure` yet — edit JSON directly (presets may come later).
+### Interactive configure vs npm publish (roadmap)
+
+| Item | What it means | Status |
+|------|----------------|--------|
+| **Interactive configure** | A guided CLI/TUI (like claude-hud’s `/claude-hud:configure`) to pick presets, toggles, and colors without hand-editing JSON | **Not built yet** — edit `config.json` manually for now |
+| **npm publish** | Publish this package to the [npm](https://www.npmjs.com/) registry so others can install with `npm i -g cursor-hud` instead of cloning | **Not published yet** — install via git clone as above |
 
 ### Layout presets (manual)
 
