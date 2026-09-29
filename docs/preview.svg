@@ -1,41 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="118" viewBox="0 0 720 118" role="img" aria-label="cursor-hud statusline preview">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="128" viewBox="0 0 740 128" role="img" aria-label="cursor-hud statusline preview">
   <title>cursor-hud preview</title>
-  <rect width="720" height="118" rx="8" fill="#1e1e1e"/>
-  <text font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" xml:space="preserve">
-    <!-- Line 1: model | path git -->
-    <tspan x="16" y="28" fill="#4EC9B0">[Auto]</tspan>
-    <tspan fill="#808080">  </tspan>
+  <rect width="740" height="128" rx="8" fill="#1e1e1e"/>
+
+  <text x="16" y="28" font-family="Menlo, Monaco, Consolas, monospace" font-size="13">
+    <tspan fill="#4EC9B0">[Auto]</tspan>
+    <tspan fill="#808080"> | </tspan>
     <tspan fill="#DCDCAA">cursor-hud</tspan>
     <tspan fill="#808080">  </tspan>
     <tspan fill="#569CD6">main</tspan>
     <tspan fill="#DCDCAA">*</tspan>
+  </text>
 
-    <!-- Line 2: context + plan -->
-    <tspan x="16" y="52" fill="#808080">Context </tspan>
-    <tspan fill="#569CD6">ˆˆˆˆ</tspan>
-    <tspan fill="#4EC9B0">ˆ</tspan>
-    <tspan fill="#808080">‘‘‘‘‘</tspan>
-    <tspan fill="#569CD6"> 34%</tspan>
-    <tspan fill="#808080"> 69k/200k  Plan </tspan>
-    <tspan fill="#808080">auto </tspan>
-    <tspan fill="#DCDCAA">ˆˆ</tspan>
-    <tspan fill="#808080">‘‘‘‘‘‘‘‘</tspan>
-    <tspan fill="#DCDCAA"> 14%</tspan>
-    <tspan fill="#808080"> · api </tspan>
-    <tspan fill="#C586C0">ˆ</tspan>
-    <tspan fill="#808080">‘‘‘‘‘‘‘‘‘</tspan>
-    <tspan fill="#C586C0"> 11%</tspan>
+  <text x="16" y="56" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#808080">Context</text>
+  <rect x="78" y="46" width="100" height="12" rx="2" fill="#333333"/>
+  <rect x="78" y="46" width="34" height="12" rx="2" fill="#569CD6"/>
+  <text x="186" y="56" font-family="Menlo, Monaco, Consolas, monospace" font-size="13">
+    <tspan fill="#569CD6">34%</tspan>
+    <tspan fill="#808080"> 69k/200k | Plan auto </tspan>
+  </text>
+  <rect x="400" y="46" width="80" height="12" rx="2" fill="#333333"/>
+  <rect x="400" y="46" width="11" height="12" rx="2" fill="#DCDCAA"/>
+  <text x="488" y="56" font-family="Menlo, Monaco, Consolas, monospace" font-size="13">
+    <tspan fill="#DCDCAA">14%</tspan>
+    <tspan fill="#808080"> . api </tspan>
+  </text>
+  <rect x="560" y="46" width="80" height="12" rx="2" fill="#333333"/>
+  <rect x="560" y="46" width="9" height="12" rx="2" fill="#C586C0"/>
+  <text x="648" y="56" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#C586C0">11%</text>
 
-    <!-- Line 3: tools + todo -->
-    <tspan x="16" y="76" fill="#DCDCAA">Ð</tspan>
-    <tspan fill="#4EC9B0"> Read</tspan>
-    <tspan fill="#808080">: src/foo.ts  ¸ Fix layout (1/2)</tspan>
+  <circle cx="22" cy="80" r="5" fill="none" stroke="#DCDCAA" stroke-width="2"/>
+  <path d="M22 75 A5 5 0 0 1 22 85 Z" fill="#DCDCAA"/>
+  <text x="34" y="84" font-family="Menlo, Monaco, Consolas, monospace" font-size="13">
+    <tspan fill="#4EC9B0">Read</tspan>
+    <tspan fill="#808080">: src/foo.ts | &gt; Fix layout (1/2)</tspan>
+  </text>
 
-    <!-- Line 4: agent -->
-    <tspan x="16" y="100" fill="#DCDCAA">Ð</tspan>
-    <tspan fill="#808080"> #1 </tspan>
+  <circle cx="22" cy="106" r="5" fill="none" stroke="#DCDCAA" stroke-width="2"/>
+  <path d="M22 101 A5 5 0 0 1 22 111 Z" fill="#DCDCAA"/>
+  <text x="34" y="110" font-family="Menlo, Monaco, Consolas, monospace" font-size="13">
+    <tspan fill="#808080">#1 </tspan>
     <tspan fill="#4EC9B0">explore</tspan>
     <tspan fill="#808080"> bg: Search tokens</tspan>
-    <tspan x="560" y="100" fill="#808080">1m 12s</tspan>
   </text>
+  <text x="640" y="110" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#808080">1m 12s</text>
 </svg>
